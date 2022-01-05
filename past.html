@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="light.css" />
+        <meta charset="utf-8" />
+        <title>3D Printing Technology</title>
+        
+        <!-- font-family: 'Roboto', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Montserrat', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <script>
+            function toggleTheme() {
+                // Obtains an array of all <link> elements 
+                // Select css using indexing
+                var theme = document.getElementsByTagName('link')[0];
+                var headImage = document.getElementsByTagName('img')[0];
+                var timeline = document.getElementsByTagName('img')[1];
+
+                // Change the value of href attribute 
+                // to change the css sheet.
+                if (theme.getAttribute('href') == 'light.css') {
+                    theme.setAttribute('href', 'dark.css');
+                } else {
+                    theme.setAttribute('href', 'light.css');
+                }
+
+                //change header image
+                if (headImage.getAttribute('src') == 'images/past.png') {
+                    headImage.setAttribute('src', 'images/past-dark.png');
+                } else {
+                    headImage.setAttribute('src', 'images/past.png');
+                }
+
+                //change timeline
+                if (timeline.getAttribute('src') == 'images/timeline.png') {
+                    timeline.setAttribute('src', 'images/timeline-dark.png');
+                } else {
+                    timeline.setAttribute('src', 'images/timeline.png');
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="toggleTheme()">Switch Theme</button>
+        </div>
+
+        <div class="head">
+            <h1>3D Printing</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="navlink">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li class="active">
+                        <a href="#">Past</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="present.html">Present</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="future.html">Future</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="tech.html">Tech</a>
+                    </li>
+                </div> 
+            </ul>
+        </nav>
+        
+        <img src="images/past.png" alt="past" class="header-image">
+        
+        <article>
+            <img src="images/timeline.png" alt="a timeline" class="timeline">
+
+            <hr />
+        </article>
+    </body>
+</html>

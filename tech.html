@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="light.css" />
+        <meta charset="utf-8" />
+        <title>3D Printing Technology</title>
+        
+        <!-- font-family: 'Roboto', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Montserrat', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <script>
+            function toggleTheme() {
+                // Obtains an array of all <link> elements 
+                // Select css using indexing
+                var theme = document.getElementsByTagName('link')[0];
+                var headImage = document.getElementsByTagName('img')[0];
+
+                // Change the value of href attribute 
+                // to change the css sheet.
+                if (theme.getAttribute('href') == 'light.css') {
+                    theme.setAttribute('href', 'dark.css');
+                } else {
+                    theme.setAttribute('href', 'light.css');
+                }
+
+                if (headImage.getAttribute('src') == 'images/tech.png') {
+                    headImage.setAttribute('src', 'images/tech-dark.png');
+                } else {
+                    headImage.setAttribute('src', 'images/tech.png');
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="toggleTheme()">Switch Theme</button>
+        </div>
+
+        <div class="head">
+            <h1>3D Printing</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="navlink">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="past.html">Past</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="present.html">Present</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="future.html">Future</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li class="active">
+                        <a href="#">Tech</a>
+                    </li>
+                </div> 
+            </ul>
+        </nav>
+        
+        <img src="images/tech.png" alt="tech" class="header-image">
+
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tincidunt praesent semper feugiat nibh.
+                Arcu ac tortor dignissim convallis aenean et tortor at. Eget duis at tellus at urna condimentum mattis pellentesque id. Convallis a cras semper auctor neque. 
+                Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Orci nulla pellentesque dignissim enim sit. 
+                Eros donec ac odio tempor orci dapibus ultrices. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. 
+                Nunc sed id semper risus in hendrerit gravida rutrum quisque.
+            </p>
+            
+            <p>
+                Turpis egestas pretium aenean pharetra magna ac. Proin sed libero enim sed faucibus turpis. 
+                Aliquet lectus proin nibh nisl condimentum id venenatis a. Phasellus faucibus scelerisque eleifend donec pretium vulputate. 
+                Consequat interdum varius sit amet mattis vulputate enim. Volutpat est velit egestas dui id. Elit duis tristique sollicitudin nibh sit amet. 
+                Mi bibendum neque egestas congue quisque egestas diam in arcu. Diam vulputate ut pharetra sit amet. A diam maecenas sed enim ut sem.
+                Gravida cum sociis natoque penatibus et magnis. Ultrices dui sapien eget mi proin sed libero. 
+                Volutpat ac tincidunt vitae semper. Orci phasellus egestas tellus rutrum tellus pellentesque eu. 
+            </p>
+            
+            <p>
+                Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Bibendum est ultricies integer quis auctor elit sed. 
+                Nisi lacus sed viverra tellus in hac. Ac ut consequat semper viverra nam libero justo. Varius sit amet mattis vulputate enim nulla aliquet. 
+                Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Cursus mattis molestie a iaculis at erat. Ac ut consequat semper viverra nam libero justo laoreet. 
+                Blandit cursus risus at ultrices mi tempus imperdiet nulla. Augue interdum velit euismod in. Neque laoreet suspendisse interdum consectetur libero. 
+                Dignissim enim sit amet venenatis urna cursus eget.
+            </p>
+
+            <hr />
+        </article>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+/* my stuff */
+
+body {
+    background-color: #181818;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    background-color: #181818;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navlink {
+    width: 20%;
+}
+
+li {
+    width: 50%;
+    margin: auto;
+    border-bottom: solid white 2px;
+    transition-duration: 500ms;
+}
+
+.active {
+    background-color: #3f7bdf;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 500ms;
+}
+
+li a:hover {
+    background-color: #292836;
+    transition-duration: 500ms;
+    letter-spacing: 5px;
+}
+
+li:hover {
+    width: 75%;
+    transition-duration: 500ms;
+}
+
+.active a:hover {
+    background-color: #77a5f2;
+    color: white;
+}
+
+.caption {
+    text-align: center;
+    width: 50%;
+    float: right;
+}
+
+.header-image {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.article-title {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+article {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-top: 15px;
+   
+}
+
+.timeline {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.half-size {
+    width: 48%;
+    margin-left: none;
+    margin-right: auto;
+    float: left;
+}
+
+.gif {
+    width: 48%;
+    margin-left: auto;
+    margin-right: none;
+    float: right;
+}
+
+hr {
+    width: 10%;
+    border: solid #3f7bdf 2px;
+    background-color: #3f7bdf;
+    margin-top: 15px;
+    float: none;
+}
+
+.flex-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+button {
+    background-color: #181818;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 500ms;
+    text-decoration: none;
+    border: none;
+    border-bottom: solid white 2px;
+    padding: 10px 15px;
+    text-align: center;
+    
+}
+
+button:hover {
+    background-color: #292836;
+    transition-duration: 500ms;
+    letter-spacing: 2px;
+}
+

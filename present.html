@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="light.css" />
+        <meta charset="utf-8" />
+        <title>3D Printing Technology</title>
+        
+        <!-- font-family: 'Roboto', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <!-- font-family: 'Montserrat', sans-serif; -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <script>
+            function toggleTheme() {
+                // Obtains an array of all <link> elements 
+                // Select css using indexing
+                var theme = document.getElementsByTagName('link')[0];
+                var headImage = document.getElementsByTagName('img')[0];
+                var gif = document.getElementsByTagName('img')[1];
+
+                // Change the value of href attribute 
+                // to change the css sheet.
+                if (theme.getAttribute('href') == 'light.css') {
+                    theme.setAttribute('href', 'dark.css');
+                } else {
+                    theme.setAttribute('href', 'light.css');
+                }
+
+                if (headImage.getAttribute('src') == 'images/present.png') {
+                    headImage.setAttribute('src', 'images/present-dark.png');
+                } else {
+                    headImage.setAttribute('src', 'images/present.png');
+                }
+
+                if (gif.getAttribute('src') == 'images/gif-light.gif') {
+                    gif.setAttribute('src', 'images/gif-dark.gif');
+                } else {
+                    gif.setAttribute('src', 'images/gif-light.gif');
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <button onclick="toggleTheme()">Switch Theme</button>
+        </div>
+
+        <div class="head">
+            <h1>3D Printing</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <div class="navlink">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="past.html">Past</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li class="active">
+                        <a href="#">Present</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="future.html">Future</a>
+                    </li>
+                </div>
+                
+                <div class="navlink">
+                    <li>
+                        <a href="tech.html">Tech</a>
+                    </li>
+                </div> 
+            </ul>
+        </nav>
+        
+        <img src="images/present.png" alt="present" class="header-image">
+        
+        <article>
+            <div class="flex-container">
+                <p class="half-size">
+                    Today, 3D printing is used in a wide array of different industries and applications. 
+                    From hobby use to life saving medical treatments, 3D printing has opened the door to many different and rapidly advancing technologies. 
+                    Three common applications of this technology are prototyping and manufacturing, medicine, and construction.
+                
+                    <br />
+                    <br />
+                
+                    3D printing had first been developed as a means for faster prototyping. 
+                    With a traditional molded prototype it might cost hundreds of thousands of dollars, while also taking weeks to produce a single mold. 
+                    It is highly impractical if one is trying to improve on a design with each iteration. 
+                    3D printing technology reduces the lead times required in traditional manufacturing, 
+                    which allows a prototype to be fabricated in mere hours rather than weeks at a fraction of the regular cost.
+            
+                    <br />
+                    <br />
+                
+                    To start the 3D printing process a Computer Aided Design (CAD) file is generated after the design is completed and 
+                    converted into a Standard Tessellation Language (STL) file. This conversion allows the 3D printer to create an object using geometric data. 
+                    The four main parts are the UltraViolet (UV) curable photopolymer liquid, perforated table, laser source, 
+                    and a computer to control the 3D printer. The table liquid polymer is then released onto the table where the UV laser then 
+                    hardens the polymer which creates a layer. The machine then moves onto the next layer where it repeats the process until the item is finished. 
+                    (Jandyal, Chaturvedi, Wazir, Raina & Haq, 2022)
+                </p>
+    
+                <img src="images/gif-light.gif" alt="a gif of a 3d printer" class="gif">
+            </div>
+            
+            <hr />
+            
+        </article>
+
+        
+    </body>
+</html>
